@@ -1,0 +1,17 @@
+<div class="row gy-5">
+  <div *ngFor="let member of crew" class="col-sm-6 col-md-4">
+    <div class="container">
+      <div class="card text-center">
+        <h4 class="card-header">{{member.name}}</h4>
+        <div class="card-body">
+          <h5 class="card-title">{{member.agency}}</h5>
+          <p class="card-text"> </p>
+          <a href="{{member.wikipedia}}" class="btn btn-primary" target="_blank">Wikipedia</a>
+        </div>
+        <div class="card-footer text-muted" style="text-transform: capitalize">
+          {{member.status}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
